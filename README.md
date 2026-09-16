@@ -135,7 +135,7 @@ RAM: 2048 MB
 ```
 ![Kali Linux Login](3-login.png)
 ![Kali Linux Desktop](4-Linux_Desktop.png)
-![Kali Network Adapter Settings](5-Network_setting.png)
+![Kali Network Adapter Settings](5-Network_settings.png)
 
 > 💡 Note: Network adapter settings (like Adapter Type and MAC Address) are locked while the VM is running or in a saved state — power the VM off completely before editing them.
 
@@ -152,7 +152,7 @@ Gateway:      10.0.0.1
 DNS:          8.8.8.8
 ```
 
-![IP Address Verification](6-Screenshots.png)
+![IP Address Verification](6-Screenshot.png)
 
 A fixed IP makes it easier to document the lab and reference the Kali machine in future exercises.
 
