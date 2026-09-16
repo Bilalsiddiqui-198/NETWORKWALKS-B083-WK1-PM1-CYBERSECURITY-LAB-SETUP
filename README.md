@@ -181,9 +181,6 @@ After completing the configuration and verifying the connection, I created a fin
 
 This provides a documented recovery point that can be used to return to the completed setup in the future.
 
-**Snapshot Name:** `Kali Linux - Network Configured`
-**Description:** Snapshot taken after configuring the static IP and NAT Network. Internet connectivity confirmed working via browser test.
-
 ### 📸 Evidence
 
 ![Snapshot Created](Snapshot.png)
