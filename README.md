@@ -140,7 +140,7 @@ Subnet Mask:  255.255.255.0
 Gateway:      10.0.0.1
 DNS:          8.8.8.8
 ```
-**Checking Network COnfiguration**:
+**Checking Network Configuration**:
 
 ![IP Address Verification](5-Network_settings.png)
 
@@ -152,10 +152,10 @@ A fixed IP makes it easier to document the lab and reference the Kali machine in
 
 | Test                     | Command                       | Expected Result             | Screenshot |
 |---------------------------|-------------------------------|------------------------------|------------|
-| Check IP address           | `ip a`                        | Correct Kali IP shown        | `ip-address-verification.png` |
-| Test gateway               | `ping -c 4 10.0.0.1`            | Successful replies           | `gateway-ping.png` |
-| Test internet connectivity | `ping -c 4 8.8.8.8`              | Successful replies           | `internet-ping.png` |
-| Test DNS resolution        | `nslookup google.com`             | Domain resolves               | `dns-resolution.png` |
+| Check IP address           | `ip a`                        | Correct Kali IP shown        | `6-Screenshot.png` |
+| Test gateway               | `ping -c 4 10.0.0.1`            | Successful replies           | `Gateway_ping_test.png` |
+| Test internet connectivity | `ping -c 4 8.8.8.8`              | Successful replies           | `Internet_Connectivity.png` |
+| Test DNS resolution        | `nslookup google.com`             | Domain resolves               | `DNS_Resolution.png` |
 | Verify Nmap install        | `nmap --version`                   | Nmap version displayed        | — |
 
 
@@ -236,7 +236,7 @@ This lab is intended strictly for educational and authorized testing purposes on
 
 # 👤 Author
 
-**[Bilal Ashfaq]**
+**Bilal Ashfaq**
 Cybersecurity Enthusiast / Student
 
 LinkedIn: linkedin.com/in/bilal-siddiqui-61562a333
