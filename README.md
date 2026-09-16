@@ -237,6 +237,7 @@ This lab is intended strictly for educational and authorized testing purposes on
 # 👤 Author
 
 **Bilal Ashfaq**
-Cybersecurity Enthusiast / Student
 
-LinkedIn: linkedin.com/in/bilal-siddiqui-61562a333
+`Computer Science Student | Cybersecurity & Networking Enthusiast`
+
+LinkedIn: https://www.linkedin.com/in/bilal-siddiqui-61562a333/
