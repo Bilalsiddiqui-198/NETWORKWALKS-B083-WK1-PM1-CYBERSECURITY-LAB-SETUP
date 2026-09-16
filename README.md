@@ -66,27 +66,10 @@ This lab provides an isolated environment for cybersecurity learning and authori
 | 🌍 DNS Server       | 8.8.8.8                             |
 | 🔮 Future VM Range  | 10.0.0.3 – 10.0.0.99                 |
 
----
-
-## 📂 Repository Structure
-
-```
-NETWORKWALKS-B0XX-WK1-PM1-CYBERSECURITY-LAB-SETUP/
-│
-├── README.md
-├── screenshots/
-│   ├── nat-network.png
-│   ├── kali-network-adapter.png
-│   ├── kali-desktop.png
-│   ├── ip-address-verification.png
-│   ├── gateway-ping.png
-│   ├── internet-ping.png
-│   └── dns-resolution.png
-```
 
 ---
 
-# 🪜 Lab Setup Procedure
+# Lab Setup Procedure
 
 ## Step 1. Install VirtualBox
 
@@ -106,9 +89,10 @@ IPv4 Prefix:  10.0.0.0/24
 DHCP:         Enabled
 IPv6:         Disabled
 ```
+**NAT Network Settings:**
 
 ![NAT Network Settings](1-NATNETWORK.png)
-![NAT Network Settings](2-NATNETWORK-VM-Setting.png)
+
 
 A **NAT Network** (rather than plain NAT) was used because it lets multiple VMs on the same network communicate with one another — needed for future attacker/target VM setups — while still giving outbound internet access.
 
@@ -133,11 +117,17 @@ Allocated resources:
 ```
 RAM: 2048 MB
 ```
-![Kali Linux Login](3-login.png)
-![Kali Linux Desktop](4-Linux_Desktop.png)
-![Kali Network Adapter Settings](5-Network_settings.png)
+**Network Adaptor Configuration:**
 
-> 💡 Note: Network adapter settings (like Adapter Type and MAC Address) are locked while the VM is running or in a saved state — power the VM off completely before editing them.
+![Network Adaptor Configuration](2-NATNETWORK-VM-Setting.png)
+
+**Kali Linux Login:**
+
+![Kali Linux Login](3-login.png)
+
+**Kali Linux Desktop:**
+
+![Kali Linux Desktop](4-Linux_Desktop.png)
 
 ---
 
@@ -151,6 +141,7 @@ Subnet Mask:  255.255.255.0
 Gateway:      10.0.0.1
 DNS:          8.8.8.8
 ```
+**Checking Network COnfiguration**:
 
 ![IP Address Verification](5-Network_settings.png)
 
@@ -168,10 +159,22 @@ A fixed IP makes it easier to document the lab and reference the Kali machine in
 | Test DNS resolution        | `nslookup google.com`             | Domain resolves               | `dns-resolution.png` |
 | Verify Nmap install        | `nmap --version`                   | Nmap version displayed        | — |
 
-![Gateway Ping Test](screenshots/gateway-ping.png)
-![Internet Connectivity Test](screenshots/internet-ping.png)
-![DNS Resolution Test](screenshots/dns-resolution.png)
 
+**IP Address Verification:**
+
+![IP Address](6-Screenshot.png)
+
+**Gateway Ping Test:**
+
+![Gateway Ping Test](Gateway_ping_test.png)
+
+**Internet Connectivity Test:**
+
+![Internet Connectivity Test](Internet_Connectivity.png)
+
+**DNS Resolution Test:**
+
+![DNS Resolution Test](DNS_Resolution.png)
 
 # 🐞 Problems Encountered & Solutions
 
@@ -186,19 +189,6 @@ While editing the Kali VM's network settings, some options (Adapter Type, MAC Ad
 2. Reopen Settings → Network.
 3. Adapter settings became editable.
 
-## Problem 2: [Add another issue you ran into, if any]
-
-Description of the problem...
-
-**Fix:** Steps taken to resolve it...
-
----
-
-# 📋 Known Limitations / Pending Work
-
-- **VM Snapshot not yet taken.** A clean baseline snapshot (e.g. `Clean Kali - Network Setup`) was not created after the initial configuration. This is planned as a follow-up step before any exploitation or vulnerability-testing exercises are run on this VM, so the environment can be reliably restored if something breaks.
-
----
 
 # 💡 What I Learned
 
@@ -238,6 +228,3 @@ This lab is intended strictly for educational and authorized testing purposes on
 Cybersecurity Enthusiast / Student
 
 LinkedIn: linkedin.com/in/bilal-siddiqui-61562a333
-```
-
-Just make sure your actual screenshot files are placed inside a `screenshots/` folder in the repo with those exact names (or rename yours to match) so the image links resolve correctly on GitHub.
