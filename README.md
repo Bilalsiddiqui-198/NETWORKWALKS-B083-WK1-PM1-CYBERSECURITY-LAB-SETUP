@@ -152,7 +152,7 @@ Gateway:      10.0.0.1
 DNS:          8.8.8.8
 ```
 
-![IP Address Verification](6-Screenshot.png)
+![IP Address Verification](5-Network_settings.png)
 
 A fixed IP makes it easier to document the lab and reference the Kali machine in future exercises.
 
@@ -172,15 +172,6 @@ A fixed IP makes it easier to document the lab and reference the Kali machine in
 ![Internet Connectivity Test](screenshots/internet-ping.png)
 ![DNS Resolution Test](screenshots/dns-resolution.png)
 
-### Example Results
-
-```
-IP Address: 10.0.0.2/24
-Gateway:    10.0.0.1
-DNS:        8.8.8.8
-```
-
----
 
 # 🐞 Problems Encountered & Solutions
 
