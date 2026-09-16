@@ -7,8 +7,7 @@
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-v7.2-0070C0?style=flat-square&labelColor=000000)
 ![Kali Linux](https://img.shields.io/badge/Kali%20Linux-v2026.2-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white)
 ![Network](https://img.shields.io/badge/Network-10.0.0.0%2F24-238F89?style=flat-square&labelColor=000000)
-![Status](https://img.shields.io/badge/Status-In%20Progress-C00000?style=flat-square&labelColor=000000)
-
+![Status](https://img.shields.io/badge/Status-Complete-C00000?style=flat-square&labelColor=000000)
 ---
 
 ## 📌 Project Overview
@@ -175,6 +174,19 @@ A fixed IP makes it easier to document the lab and reference the Kali machine in
 **DNS Resolution Test:**
 
 ![DNS Resolution Test](DNS_Resolution.png)
+
+## Step 5. Create the Final Snapshot
+
+After completing the configuration and verifying the connection, I created a final VirtualBox snapshot.
+
+This provides a documented recovery point that can be used to return to the completed setup in the future.
+
+**Snapshot Name:** `Kali Linux - Network Configured`
+**Description:** Snapshot taken after configuring the static IP and NAT Network. Internet connectivity confirmed working via browser test.
+
+### 📸 Evidence
+
+![Snapshot Created](Snapshot.png)
 
 # 🐞 Problems Encountered & Solutions
 
